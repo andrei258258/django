@@ -20,6 +20,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', views.index, name='index'),
-    url(r'^posts/',include('teste.urls')),
+    url(r'^teste/', views.teste, name='teste'),
+    url(r'^posts/', include('teste.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )

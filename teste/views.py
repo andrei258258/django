@@ -10,3 +10,8 @@ def post_list(request):
 	return render(request, 'teste/post_list.html', {})
 
 
+def teste(request):
+	return render(request, 'teste/teste.html', {})
+
+
+	
